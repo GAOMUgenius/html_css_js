@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banner效果</title>
+    <style>
+        .banner {
+            height: 500px;
+            background-color: #f3f3f4;
+            background-image: url(./3.png);
+            background-repeat: repeat-y;
+            background-position: left bottom;
+            background-size: 40%;
+
+            /* 文字控制属性，继承给子级 */
+            text-align: right;
+            color: #333;
+        }
+
+        .banner h2 {
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 100px;
+        }
+
+        .banner p {
+            font-size: 20px;
+        }
+
+        .banner a {
+            width: 125px;
+            height: 40px;
+            background-color: #f06b1f;
+
+            /* 转块级无法右对齐，因为块元素独占一行 */
+            display: inline-block;
+            /* display: block; */
+
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h2>让风听从我的召唤</h2>
+        <p>风啊，听从我我的召唤，简直就像是我召唤来的风一样。哇哈哈哈哈！</p>
+        <a href="">我要召唤</a>
+    </div>
+</body>
+</html>
